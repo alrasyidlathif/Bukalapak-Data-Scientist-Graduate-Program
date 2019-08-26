@@ -1,0 +1,120 @@
+Terlepas dari faktor-faktor terkenal, seperti harga dan reputasi pemasok, kami berhipotesis tentang beberapa faktor lain yang dapat mempengaruhi pengguna untuk membeli produk tertentu. Dataset berisi 259.347 sampel (selanjutnya disebut pengguna) dan 30 fitur. Hasilnya adalah apakah pengguna membeli produk atau tidak. Detail masing-masing dan setiap fitur, mis. nama dan jenis fitur, diberikan di bawah ini. Beberapa fitur secara anonim ditetapkan. Namun, diharapkan tidak mengurangi interpretasi analisis yang dihasilkan dari kandidat. Harap perhatikan bahwa beberapa variabel diharapkan memiliki kontribusi yang signifikan terhadap keputusan pengguna untuk membeli produk, sementara beberapa dari mereka berlebihan. Ini adalah salah satu tantangan, untuk memasukkan atau tidak menyertakan fitur anonim ini untuk memecahkan masalah utama. Data sangat tidak seimbang dan mengandung nilai-nilai yang hilang (NA).
+
+Calon diharapkan
+1. Lakukan analisis data eksploratori dan berikan wawasan dari fitur-fitur yang dikenal (fitur non-anonim)
+2. Tentukan faktor signifikan (atau fitur) yang mempengaruhi pengguna untuk membeli produk
+
+Dependent variable
+
+tanggapan
+Apakah pengguna membeli (1) atau tidak membeli produk tertentu (0), jenis: variabel kategori
+
+List of independent features
+
+1. platform
+The platform used by the user
+Type: categorical 
+Group: apps(0), browser(1), others(2)
+
+2. category_name
+The category of the product that was viewed by the user
+Type: categorical
+Group: 721 groups
+
+3. condition 
+The condition of the product
+Type: categorical 
+Group: new, used
+
+4. Stock
+The number of available stock that the seller had. 
+Type: numeric
+
+5. free_shipping_coverage_count
+The number of area that were covered for a free delivery service
+Type: numeric
+
+6. courier_count
+The number of available courier services 
+Type: numeric
+
+7. view_count
+The number of users viewed the product.
+Type: numeric
+
+8. seller_delivery_response_time
+How long did it take for the seller to deliver the paid-product.
+Type: numeric
+
+9. favorite_count
+How many users favorited the product.
+Type: numeric
+
+10. sold
+The number of products that had been sold
+Type: numeric
+
+The anonymous independent features
+
+Fitur-fitur dikelompokkan menjadi
+Sebuah. fitur yang terkait dengan pengguna (featUser_ #)
+b. fitur yang terkait dengan penjual (featSeller_ #)
+c. fitur yang terkait dengan Produk (featProduct_ #)
+d. fitur umum (featGeneral_ #)
+
+featUser_1
+Jenis: kategori
+
+featUser_2
+Ketik: kategori (0: Tidak; 1: ya)
+
+featUser_3
+Ketik: kategori (0: Tidak; 1: ya)
+
+featUser_4
+Ketik: numerik
+
+featSeller_1
+Jenis: kategori
+
+featSeller_2
+Jenis: kategori
+
+featSeller_3
+Jenis: kategori
+
+featSeller_4
+Ketik: numerik
+  
+featSeller_5
+Jenis: kategori
+
+featSeller_6
+Ketik: numerik
+
+featSeller_7
+Ketik: numerik
+
+featSeller_8
+Jenis: kategori
+
+featSeller_9
+Ketik: numerik
+
+featProduct_1
+Ketik: numerik
+
+featProduct_2
+Ketik: numerik
+
+featProduct_3
+Jenis: kategori
+
+featProduct_4
+Jenis: kategori
+
+featProduct_5
+Ketik: numerik (antara 0 dan 5)
+
+featGeneral_1
+Jenis: kategori (1 dan 2)
